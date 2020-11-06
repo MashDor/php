@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  </head>
+  <body style="font-size: 1.5rem">
+    <div style="margin: auto; max-width: 600px;">
+      <h2>Форма для регистрации участников</h2>
+      <form action="./3.php" method="POST">
+        <label for="first_name">Имя</label><br>
+        <input type="text" id="first_name" name="first_name" placeholder="Введите Ваше имя" style="margin-bottom: 24px;"/><br>
+        <label for="last_name">Фамилия</label><br>
+        <input type="text" id="last_name" name="last_name" style="margin-bottom: 24px;"/><br>
+        <label for="email">Email</label><br>
+        <input type="email" id="email" name="email" style="margin-bottom: 24px;"/><br>
+        <div style="margin-bottom: 24px;">
+          <span>Выберите курс, который хотели бы посещать:</span><br>
+          <input type="checkbox" id="php" name="courses[]" value="php"/>
+          <label for="php">PHP</label><br>
+          <input type="checkbox" id="lisp" name="courses[]" value="lisp"/>
+          <label for="lisp">Lisp</label><br>
+          <input type="checkbox" id="perl" name="courses[]" value="perl"/>
+          <label for="perl">Perl</label><br>
+          <input type="checkbox" id="unix" name="courses[]" value="unix"/>
+          <label for="unix">Unix</label><br>
+        </div>
+        <label for="about">Что вы хотите, чтобы мы знали о вас?</label><br>
+        <textarea id="about" name="about" style="margin-bottom: 24px; width: 100%; height: 200px;"></textarea><br>
+        <input type="checkbox" id="access" name="access" style="margin-bottom: 24px;"/>
+        <label for="access">Подтвердить получение</label><br>
+        <div>
+          <button type="submit">Отправить</button>
+          <button type="reset">Отменить</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
+
